@@ -1,6 +1,6 @@
 
 const isValidMobileNumber = (number) => {
-    const mobileNumberPattern = /^\d{10}$/;
+    const mobileNumberPattern = /^\+?\d{1,4}[-.\s]?\d{10}$/;
     return mobileNumberPattern.test(number);
 }
 
