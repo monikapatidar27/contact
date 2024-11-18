@@ -2,10 +2,10 @@ const mongoose = require("mongoose");
 
 const dbConnect = () => {
     mongoose
-        .connect(process.env.DB_URL||"mongodb+srv://mpatidar:GTAlQSULi17j8jEh@cluster0.n2ptq.mongodb.net/userDetails?retryWrites=true&w=majority"
+        .connect(process.env.DB_URL
 ,{
-            useNewUrlParser:true,
-            useUnifiedTopology: true,
+            // useNewUrlParser:true,
+            // useUnifiedTopology: true,
         })
         .then(() =>{
             console.log("Db Connection Successful");
